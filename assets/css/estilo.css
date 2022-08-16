@@ -1,0 +1,430 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700');
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{ font-family: 'Lato', sans-serif; }
+
+.title{
+	color: #2b2e30;
+	font-weight: bold;
+}
+
+.sub-t{
+	color: #6d6d6d;
+	font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.btn-primary{
+	background: #fed136;
+	border-color: #fed136;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.btn-primary:hover{
+	background: #f2e617;
+	border-color: #f2e617;
+	color: #2b2e30;
+}
+
+.btn-danger{
+	background-color: transparent;
+	color: #f2e617;
+	border: 2px solid #f2e617;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active{
+	background-color: #f2e617;
+	color: #fff;
+	border-color: #f2e617;
+}
+
+/*HEADER*/
+header.header{
+	width: 100%;
+	height: 600px;
+	background-image: url(../../images/bg-3.jpg);
+	background-size: cover;
+}
+
+#phones p{
+	margin-top: 1rem;
+	margin-right: 1rem;
+	color: #e1e1e1;
+}
+#phones p span{ color: #fed136; }
+
+/*HEADER > NAV*/
+#logo{ 
+	width: 200px;
+}
+#navbarContent{ width: 100%; }
+#navbarContent ul{ width: 80%; margin-left: 32% !important; }
+#navbarContent ul li{ padding: 10px 20px; }
+#navbarContent ul li a{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+#navbarContent ul li a:hover{
+	text-decoration: none;
+}
+#navbarContent ul li#orcamento-nav{
+	background-color: #fed136;
+	padding: 10px 35px;
+	border-radius: 20px;
+}
+#navbarContent ul li#orcamento-nav a{
+	color: #28292b;
+	text-decoration: none;
+}
+button.navbar-toggler{ background-color: #6d6d6d; }
+
+/*HEADER > APRESENTACAO*/
+.apresenta-content{
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 2%;
+	background-color: rgba(255, 255, 255, .6);
+	padding: 30px;
+	border-radius: 10px;
+}
+.apresenta-content span.big{
+	color: #2b2e30;
+	text-transform: uppercase;
+	padding: 10px 0;
+	font-weight: bold;
+	font-size: 2rem;
+	text-shadow: 0 0 6px #bfbfbf;
+}
+.apresenta-content p{
+	font-weight: normal;
+	text-transform: uppercase;
+}
+#apresentacao a.btn{
+	padding: 15px 30px;
+}
+
+/*INTRODUCAO*/
+.page-content{
+	padding-top: 5%;
+}
+#intro{
+	width: 100%;
+	background-image: url(../../images/bg-intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -129px;
+}
+#intro h1{ font-size: 4rem;}
+
+/*BANNER*/
+#banners{ margin-top: 20px; }
+#banners h5, #banners li{ color: #6d6d6d !important; }
+.banner-title{
+	font-size: 3rem;
+    text-align: left;
+    margin: -40% 0 5% -10%;
+    font-weight: bold;
+}
+.banner-content{
+	text-align: left;
+	position: relative;
+	font-size: 1.2rem;
+	margin-top: 7%;
+	margin-left: -5%;
+	list-style: none;
+}
+.banner-content li{ padding: 5px 0; margin-left: -30px; }
+.banner-content li:before {
+    content: '\2714\0020';
+    margin-left: -20px;
+    position: absolute;
+}
+.carousel-control-next{
+	position: absolute;
+    margin-right: 38%;
+    /* display: block; */
+    width: 50px;
+    height: 50px;
+    color: #000;
+    background: #ffd213;
+    margin-top: 31.4%;
+    opacity: 1;
+}
+.carousel-control-prev{
+	position: absolute;
+    margin-left: 55%;
+    /* display: block; */
+    width: 50px;
+    height: 50px;
+    color: #000;
+    background: #ffd213;
+    margin-top: 31.4%;
+    opacity: 1;
+}
+#banners .btn-danger{
+	margin-left: -100%;
+    margin-bottom: -10%;
+}
+
+/*SERVIÇOS*/
+#servicos{ 
+	margin-top: 20px;
+	padding: 60px 0; 
+	background-color: #fbfbfb;
+}
+#servicos h3{ margin-bottom: 100px; }
+.servico{
+	margin: 0 10px;
+	background-color: transparent;
+	padding-bottom: 20px;
+}
+.servico .servico-t{
+	padding: 20px 5px;
+	font-size: 1.7rem;
+	font-weight: bold;
+}
+.servico .servico-p{
+	min-height: 120px;
+}
+.servico .btn-primary{
+	float: none;
+}
+.servico i{ color: #f2e617; }
+.servico .btn-primary{
+	background-color: transparent;
+	border: 2px solid transparent;
+	border-bottom: 2px solid #f2e617;
+	border-radius: 0;
+	color: #2b2e30;
+}
+.servico .btn-primary:hover{
+	border: 2px solid #f2e617;
+}
+.servico-y{
+	background-color: #f2e617;
+	border-top: 30px solid transparent;
+	margin-top: -30px;
+	color: #2b2e30;
+}
+.servico-y::before{
+	content: '';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0px 176px 30px 181px;
+    border-color: transparent transparent #f2e717 transparent;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -160px;
+}
+.servico-y i{ color: #2b2e30; }
+.servico-y .btn-primary{
+	background-color: transparent;
+	border: 2px solid transparent;
+	border-bottom: 2px solid #2b2e30;
+	border-radius: 0;
+	color: #2b2e30;
+}
+.servico-y .btn-primary:hover{
+	border: 2px solid #2b2e30;
+}
+
+/*ORÇAMENTO*/
+#orcamento{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#orcamento form{
+	margin-top: 7%;
+}
+#orcamento input, #orcamento select, #orcamento textarea{
+	width: 46%;
+	margin: 1%;
+	padding: 10px;
+	border-radius: 5px 25px 5px 5px;
+	border: 1.5px solid #6d6d6d;
+}
+#sl_orc_servico, #orcamento textarea{ width: 95% !important; }
+::placeholder{ color: rgb(109, 109, 109); }
+select option{ color: rgb(109, 109, 109) }
+#orcamento input[type="submit"]{
+	border-radius: 0;
+	border: none;
+}
+
+/*CONTATO*/
+#contato{
+	padding: 50px 0;
+	background-image: url("../../images/map-image.png");
+	background-color: #212529;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#contato h1, #contato h3{ color: #fff; }
+#contato h3{ margin-bottom: 7%; }
+#contato input{ padding: 10px; }
+#contato input[type="submit"]{
+	width: 46%;
+	margin: 1%;
+}
+#contato textarea{ min-height: 170px; }
+
+/*FOOTER*/
+#rodape{
+	padding-top: 30px;
+	background-color: #2b2e30;
+	color: #fff;
+}
+/*FOOTER > REDES SOCIAIS*/
+#social h3 small{ font-size: 1.1rem; color: #6d6d6d; font-weight: bold; text-transform: uppercase; }
+#social h3 span{ font-size: 1.5rem; text-transform: uppercase; color: #fff; font-weight: bold; }
+#social div.col-md-6{ text-align: left; }
+#social div.col-md-6 a{ color: #6d6d6d; padding: 10px 0; display: block; text-transform: uppercase; }
+#social div.col-md-6 a#youtube:hover{ color: #ff3333; text-decoration: none; }
+#social div.col-md-6 a#instagram:hover{ color: #a727af; text-decoration: none; }
+/*FOOTER > TRABALHE CONOSCO*/
+#trabalho h3 span{ font-size: 1.5rem; text-transform: uppercase; color: #fff; font-weight: bold; }
+#trabalho-b{
+	background-color: #212529;
+	padding: 30px;
+	margin-top: 50px;
+}
+#trabalho-b p{ padding-top: 10px; margin-bottom: 0; }
+#trabalho-b a{ color: #fed136; font-weight: bold; font-size: 1.3rem; }
+/*FOOTER > MAPA SITE*/
+#mapa h3 span{ font-size: 1.5rem; text-transform: uppercase; color: #fff; font-weight: bold; }
+#mapa ul{ list-style: none; margin-top: 35px;}
+#mapa ul li{ padding: 5px; }
+#mapa ul li a{ color: #6d6d6d; text-transform: uppercase; }
+#mapa ul li a:hover{ color: #fed136; text-decoration: none; }
+/*FOOTER > COPYRIGHT*/
+#copy{ padding: 20px 20px 0 20px; margin-top: 20px; border-top: 1px solid #fff; }
+#copy img{ float: right; }
+
+/*SERVIÇOS PAGES*/
+h1.s-nome {
+    display: block;
+    width: 50%;
+    padding: 30px 30px 30px 120px;
+    margin-top: 1.5%;
+    background: #fed136;
+    border-radius: 0 100px 10px 0;
+    font-weight: bold;
+    font-size: 3rem;
+    float: left;
+    margin-bottom: 50px;
+}
+.s-nome-right{
+	float: right;
+	width: 20% !important;
+	margin-left: 30%;
+	border-radius: 100px 0 0 100px !important;
+}
+#servico .container{
+	margin-bottom: 100px;
+}
+#servico .container img{ margin: 30px 0; width: 100%; }
+#servico .container img.float-img{
+	width: 250px;
+	position: absolute;
+	margin-left: 40%;
+	margin-top: -14.5%;
+}
+
+/*VOLTAR TOPO*/
+.topo {
+	padding: 20px 30px;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(109, 109, 109, .7);
+    font-size: 12px;
+    z-index: 999;
+}
+.topo a{ color: #fff; }
+.topo:hover {
+    background-color: #6d6d6d;
+}
+
+@media screen and (max-width: 1200px){
+	#banners .btn-danger{
+	    margin-bottom: -2%;
+	}
+	#servico .container img.float-img{
+		margin-left: 61%;
+    	margin-top: -23.2%;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.carousel-control-prev {
+    	margin-left: 51%;
+	}
+	.servico-y::before {
+	    border-width: 0px 142px 30px 160px;
+	    margin-left: -135px;
+	}
+
+	h1.s-nome{ width: 70%; margin-right: 30%; }
+	h1.s-nome-right{ display: none; }
+	#servico .container img.float-img{
+    	margin-left: 66%;
+    	margin-top: -28.2%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#menu{
+		background: #2b2e30;
+	    padding: 30px;
+	    width: 40%;
+	    border-radius: 120px 0 0 0;
+	}
+	.nav-item{ text-align: right; }
+	.nav-item a{
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: lighter;
+	}
+	#navbarContent ul {
+	    width: 80%;
+	    margin-left: auto !important;
+	}
+	#banners{ display: none; }
+	.servico-y::before {
+	    border-width: 0px 110px 30px 111px;
+	    margin-left: -96px;
+	}
+	#servico .container img.float-img{ display: none; }
+	h1.s-nome {
+	    width: 100%;
+	    border-radius: 0;
+	    text-align: center;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	header.header{ height: 800px }
+	#logo{ margin-left: 0; }
+	.servico{ margin-top: 50px; }
+	div#social, div#trabalho, div#mapa{ padding-left: 50px; }
+	div#mapa{ text-align: left !important; }
+
+	h1.s-nome{ width: 100% !important; padding: 30px 0; }
+	.s-nome-right{ display: none; }
+}
